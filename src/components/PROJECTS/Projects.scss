@@ -1,0 +1,79 @@
+@import "../../index.scss";
+
+.projects-container{
+     @include Layout;
+     height: 160vh;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     justify-content: center;
+     margin-top: 2rem;
+
+     @include large{
+        height: auto;
+        padding: 1rem;
+     }
+
+        h1 {
+            font-size: 35px;
+            span {
+                background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 2.5rem;
+            gap: 2.5rem;
+            
+            @include five{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                 p{
+                    font-size: 18px;
+                    line-height: 1.7rem;
+                }
+
+                div{
+                    width: 100%;
+                    margin-top: 1rem;
+                    display: flex;
+                    gap: 1rem;
+
+                    a:nth-child(1){
+                        background-color: var(--secondary-color);
+                        color: #fff;
+
+                        &:hover{
+                            background-color: transparent;
+                            border: 2px solid #fff;
+                        }
+                    }
+                    a:nth-child(2){
+                            background-color: transparent;
+                            border: 2px solid #fff;
+
+                        &:hover{
+                           background-color: #fff;
+                        color: var(--secondary-color);
+                        }
+                    }
+
+                    a{
+                        padding: .7rem 2.5rem;
+                        border-radius: .6rem;
+                    }
+                }
+            }
+        }
+}

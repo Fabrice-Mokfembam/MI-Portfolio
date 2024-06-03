@@ -1,0 +1,82 @@
+@import "../../index.scss";
+
+.Hero-container {
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  @include two{
+          height: auto;
+     }
+
+  .hero-wrapper {
+    @include Layout;
+    margin-top: 3rem;
+    display: flex;
+
+    @include two{
+      flex-direction: column;
+      margin-top: 1rem;
+      padding: .7rem ;
+    }
+
+    .hero-1 {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      gap: 2rem;
+
+      h1 {
+        font-size: 43px;
+        word-spacing: 0.4rem;
+
+        @include small{
+          font-size: 39px;
+        }
+
+        span {
+          color: var(--secondary-color);
+        }
+      }
+
+      h3 {
+        font-size: 30px;
+
+        @include small{
+          font-size: 28px;
+        }
+
+        span{
+          background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      p {
+        font-size: 17px;
+        width: 84%;
+        line-height: 1.5rem;
+      }
+
+      button {
+        width: 200px;
+        box-sizing: content-box;
+        padding: 1.2rem 2.2rem;
+        background: var(--text-bg);
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        margin-top: 2rem;
+        font-size: 18px;
+      }
+    }
+    .hero-2 {
+      flex: 2;
+
+      @include two{
+        @include centerHorizontal;
+      }
+    }
+  }
+}

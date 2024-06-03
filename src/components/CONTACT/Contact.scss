@@ -1,0 +1,90 @@
+@import "../../index.scss";
+
+
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--about-bg);
+    
+    
+
+
+    .contact-wrapper{
+        @include Layout;
+        display: flex;
+        height: inherit;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+         h1 {
+            font-size: 35px;
+            span {
+                background: linear-gradient(45deg, var(--secondary-color), var(--tertiary-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    form{
+        width: 90%;
+        height: 80vh;
+        background-color: var(--picture-bg);
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+        justify-content: center;
+
+        @include small{
+            // margin-left: -.6rem;
+        }
+
+
+        label{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            font-size: 18px;
+
+            input{
+                height: 60px;
+                border-radius: .4rem;
+                border: none;
+                outline: none;
+                background-color: var(--primary-color);
+                color: #fff;
+                font-size: 19px;
+                padding-left: 1rem;
+            }
+            textarea{
+                height: 140px;
+                border-radius: .4rem;
+                border: none;
+                outline: none;
+                background-color: var(--primary-color);
+                color: #fff;
+                font-size: 19px;
+                padding: 1rem;
+            }
+        }
+
+        button{
+            width: 200px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            align-self: flex-end;
+            border-radius: .5rem;
+        }
+    }
+}
