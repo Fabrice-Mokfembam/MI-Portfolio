@@ -1,53 +1,56 @@
 import React from 'react';
 import './Projects.scss';
 
+import { word,AI,API,blogger,VC,Istore } from '../../assets/images';
+
+
 const projects = [
   {
-    img: 'project1.jpg',
+    img: Istore,
     name: 'IStore',
     description: 'A niche product site where I focused 80% on the backend and 20% on the frontend.',
     techStack: 'MERN stack',
-    githubLink: 'https://github.com/your-username/istore',
-    liveLink: 'https://your-istore-website.com',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/istore-frontend',
+    liveLink: 'https://user-panel-lac.vercel.app/',
   },
   {
-    img: 'project2.jpg',
+    img: blogger,
     name: 'Blogger',
     description: 'A blogging platform built using the MERN stack with SASS for styling.',
     techStack: 'MERN stack, SASS',
-    githubLink: 'https://github.com/your-username/blogger',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/Blog',
     liveLink: 'https://your-blogger-website.com',
   },
   {
-    img: 'project3.jpg',
+    img: word,
     name: 'Mini Realtime Word Processing App',
     description: 'A mini word processing app with real-time collaboration built using the MERN stack and Socket.IO.',
     techStack: 'MERN stack, SASS, Socket.IO',
-    githubLink: 'https://github.com/your-username/mini-word-processing-app',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/Realtime-Wordprocessing-app',
     liveLink: 'https://your-mini-word-processing-app.com',
   },
   {
-    img: 'project4.jpg',
+    img: VC,
     name: 'V$C Rentals',
     description: 'A website for renting chairs and tables, developed for a client project using React.js and SASS.',
     techStack: 'React.js, SASS',
-    githubLink: 'https://github.com/your-username/vc-rentals',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/VC-Rentals',
     liveLink: 'https://your-vc-rentals-website.com',
   },
   {
-    img: 'project5.jpg',
+    img: AI,
     name: 'ThiagoAI',
     description: 'A bot developed using React.js, SASS, and the Gemini API.',
     techStack: 'React.js, SASS, Gemini API',
-    githubLink: 'https://github.com/your-username/thiago-ai',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/AI-Chat-Assistant',
     liveLink: 'https://your-thiago-ai-website.com',
   },
   {
-    img: 'project6.jpg',
+    img: API,
     name: 'CamNewsAPI',
     description: 'An API that provides news about Cameroonian activities, developed using Node.js, Express, and Cheerio for web scraping.',
     techStack: 'Node.js, Express, Cheerio',
-    githubLink: 'https://github.com/your-username/camnews-api',
+    githubLink: 'https://github.com/Fabrice-Mokfembam/CamNewsAPI',
     liveLink: 'https://your-camnews-api-website.com',
   },
 ];
