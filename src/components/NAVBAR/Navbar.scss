@@ -35,6 +35,28 @@ nav{
 
                     a{
                         padding: .5rem .6rem;
+                        position: relative;
+                        
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background-color: aliceblue;
+                            width: 0;
+                            border-bottom: 5px solid var(--secondary-color);
+                            
+                            transition: all .7s ease;
+
+                            
+                        }
+
+                        &:hover::after{
+                                width: 100%;
+                                
+                        }
+
+                        
                     }
                 }
             }

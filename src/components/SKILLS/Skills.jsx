@@ -52,11 +52,11 @@ const skills = [
 
 function Skills() {
   return (
-    <section className='Skills-container'>
+    <section id='Services' className='Skills-container'>
       <h2>My <span>Skills</span></h2>
       <div className="skill-wrapper">
         {skills.map((skill, index) => (
-          <div className="each_skill" key={index}>
+          <div className="each_skill" data-aos="zoom-in" key={index}>
             {skill.icon}
             <h3>{skill.name}</h3>
             <h4>{skill.experience}</h4>

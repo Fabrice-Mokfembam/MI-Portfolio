@@ -57,12 +57,12 @@ const projects = [
 
 function Projects() {
   return (
-    <section className='projects-container'>
+    <section id='Projects' className='projects-container'>
       <h3>My Projects</h3>
       <h1>My <span>Amazing Work</span></h1>
       <div className="projects-wrapper">
         {projects.map((project, index) => (
-          <div className="project" key={index}>
+          <div className="project" data-aos='fade-up' key={index}>
             <img src={project.img} alt="Project Image" />
             <h2>{project.name}</h2>
             <p>{project.description}</p>

@@ -27,13 +27,13 @@ const services = [
 
 function Services() {
   return (
-    <section className='services-container'>
+    <section id='Services' className='services-container'>
       <div className="services-wrapper">
         <h3>My Services</h3>
         <h1>The <span>Services I Offer</span></h1>
         <div className="services">
           {services.map((service, index) => (
-            <div className="service" key={index}>
+            <div className="service" data-aos='fade-right' key={index}>
               <div className="icon">{service.icon}</div>
               <h2>{service.title}</h2>
               <p>{service.description}</p>

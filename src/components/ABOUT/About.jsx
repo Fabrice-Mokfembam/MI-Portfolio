@@ -20,7 +20,7 @@ const interests = [
 
 function About() {
   return (
-    <section className='about-container'>
+    <section id='About' className='about-container'>
       <div className="about-wrapper">
         <div className="about-1">
           <div className="img-about">
@@ -30,7 +30,7 @@ function About() {
         <div className="about-2">
           <h3>About <span>Me</span></h3>
           <h1>Fabrice <span>Mokfembam</span></h1>
-          <p className="about-description">
+          <p className="about-description" data-aos="fade-up">
             I am a student at FET in the University of Buea since 2021. Throughout this period, I have had the opportunity to learn a lot and gain skills in the MERN stack, where I excel. Being a lover of innovation and technology, I am passionate about leveraging my skills to create impactful digital solutions.
           </p>
           <p>
@@ -38,7 +38,7 @@ function About() {
           </p>
           <div className="interests">
             {interests.map((interest, index) => (
-              <div className="each-interest" key={index}>
+              <div className="each-interest" data-aos="zoom-in" key={index}>
                 {interest.icon}
                 <p>{interest.name}</p>
               </div>

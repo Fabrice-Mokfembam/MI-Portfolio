@@ -19,12 +19,12 @@ function Hero() {
   return (
     <div className="Hero-container">
       <div className="hero-wrapper">
-        <div className="hero-1">
+        <div className="hero-1" >
           <h1>
             TRANSFORMING IDEAS INTO <br /> <span>DIGITAL REALITY</span>{" "}
           </h1>
           <h3>
-            I am A{" "}
+            I am a{" "}
             <span>
               {" "}
               {text}{" "}
@@ -41,9 +41,9 @@ function Hero() {
             the power of technology to bring ideas to life and to create
             impactful digital experiences.
           </p>
-          <button>DownLoad Resume</button>
+          <button id="btn" data-aos="fade-up" ><a target="_blank" href="./FabriceResume.pdf">DownLoad Resume</a></button>
         </div>
-        <div className="hero-2">
+        <div className="hero-2" data-aos="fade-down">
           <img src={me2} alt="image of me" />
         </div>
       </div>

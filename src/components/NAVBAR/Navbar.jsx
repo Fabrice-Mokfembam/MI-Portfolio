@@ -40,7 +40,7 @@ function Navbar() {
           ) : (
             <FiSun className="icon" onClick={toggleMode} />
           )}
-          <button>DownLoad Resume</button>
+          <button><a target="_blank" href="./FabriceResume.pdf">DownLoad Resume</a></button>
           <FiMenu className="icon hamburger" onClick={toggleSidebar} />
         </div>
       </div>

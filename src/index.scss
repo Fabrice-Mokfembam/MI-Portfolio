@@ -5,22 +5,16 @@
   --secondary-color: #7d6ddb;
   --text-color: #fff;
   --picture-bg: #373a41;
-  --about-bg:#262729;
-  --text-bg-about:#373a3f;
+  --about-bg: #262729;
+  --text-bg-about: #373a3f;
   --tertiary-color: #8f5593;
-  --text-bg: linear-gradient(
-    180deg,
-    var(--secondary-color),
-    var(--tertiary-color)
-  );
+  --text-bg: linear-gradient(180deg,
+      var(--secondary-color),
+      var(--tertiary-color));
 
-  --links-bg: linear-gradient(
-    45deg,
-    var(--primary-color)
-    ,
-    var(--tertiary-color)
-  
-  );
+  --links-bg: linear-gradient(45deg,
+      var(--primary-color),
+      var(--tertiary-color));
 }
 
 * {
@@ -31,17 +25,22 @@
   color: var(--text-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   width: 100vw;
   overflow-x: hidden;
   background-color: var(--primary-color);
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -64,27 +63,31 @@ a{
 }
 
 
-@mixin large{
+@mixin large {
   @media screen and (max-width:1024px) {
     @content;
   }
 }
-@mixin medium{
+
+@mixin medium {
   @media screen and (max-width:780px) {
     @content;
   }
 }
-@mixin mediumA{
+
+@mixin mediumA {
   @media screen and (min-width:780px) {
     @content;
   }
 }
-@mixin small{
+
+@mixin small {
   @media screen and (max-width:480px) {
     @content;
   }
 }
-@mixin x-small{
+
+@mixin x-small {
   @media screen and (max-width:350px) {
     @content;
   }
@@ -92,28 +95,73 @@ a{
 
 // other responsiveness needed
 
-@mixin one{
+@mixin one {
   @media screen and (max-width:950px) {
     @content;
   }
 }
-@mixin two{
+
+@mixin two {
   @media screen and (max-width:755px) {
     @content;
   }
 }
-@mixin three{
+
+@mixin three {
   @media screen and (max-width:390px) {
     @content;
   }
 }
-@mixin four{
+
+@mixin four {
   @media screen and (max-width:648px) {
     @content;
   }
 }
-@mixin five{
+
+@mixin five {
   @media screen and (max-width:705px) {
     @content;
+  }
+}
+
+
+
+//app stylings for animations
+
+.app {
+  position: relative;
+
+  .animate-part {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: var(--primary-color);
+    gap: 2rem;
+    @include centerVertical;
+
+    h1 {
+      font-size: 80px;
+
+      @include small(){
+        font-size: 45px;
+      }
+    }
+
+    .W1 {
+      padding: 1rem 2rem;
+      font-style: oblique;
+      background: var(--links-bg);
+      border-radius: 1rem;
+    }
+
+    h2 {
+      font-size: 50px;
+
+      @include small(){
+        font-size: 35px;
+      }
+    }
   }
 }
