@@ -11,8 +11,8 @@ function Navbar() {
 
   function toggleMode() {
     setMode(!mode);
-    }
-    
+  }
+
   function toggleSidebar() {
     setSideBar(!sidebar);
   }
@@ -40,7 +40,11 @@ function Navbar() {
           ) : (
             <FiSun className="icon" onClick={toggleMode} />
           )}
-          <button><a target="_blank" href="./FabriceResume.pdf">DownLoad Resume</a></button>
+          <button>
+            <a target="_blank" href="./FabriceResume.pdf">
+              DownLoad Resume
+            </a>
+          </button>
           <FiMenu className="icon hamburger" onClick={toggleSidebar} />
         </div>
       </div>
@@ -59,9 +63,15 @@ function Navbar() {
           ))}
         </ul>
         <div className="social-icons">
-          <FaGithub className="icon" />
-          <FaWhatsapp className="icon" />
-          <FaLinkedin className="icon" />
+          <a href="https://github.com/Fabrice-Mokfembam" target="_blank">
+            <FaGithub className="icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/Fabrice-Mokfembam" target="_blank">
+            <FaLinkedin className="icon" />
+          </a>
+          <a href="https://wa.me/237686009133" target="_blank">
+            <FaWhatsapp className="icon" />
+          </a>
         </div>
       </div>
     </nav>
