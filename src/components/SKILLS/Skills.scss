@@ -7,7 +7,7 @@
   @include centerVertical;
   gap: 1.5rem;
 
-  @include medium{
+  @include medium {
     height: auto;
   }
 
@@ -23,8 +23,8 @@
     gap: 2rem;
     justify-content: space-between;
 
-    @include small{
-        width: 100%;
+    @include small {
+      width: 100%;
     }
 
     .each_skill {
@@ -33,7 +33,7 @@
       @include centerVertical;
       transition: all 1s ease-in;
 
-      @include small{
+      @include small {
         width: 160px;
         background-color: var(--text-bg-about);
         gap: .5rem;
@@ -42,16 +42,14 @@
         border-radius: .3rem;
       }
 
-      @include three{
+      @include three {
         width: 98%;
       }
 
       h3 {
-        background: linear-gradient(
-          45deg,
-          var(--secondary-color),
-          var(--tertiary-color)
-        );
+        background: linear-gradient(45deg,
+            var(--secondary-color),
+            var(--tertiary-color));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-transform: uppercase;
@@ -60,6 +58,12 @@
       .icon {
         font-size: 40px;
       }
+    }
+  }
+
+  h4 {
+    @include small() {
+      font-size: 16px;
     }
   }
 }

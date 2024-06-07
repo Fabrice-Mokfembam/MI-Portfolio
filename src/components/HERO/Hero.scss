@@ -30,8 +30,10 @@
         font-size: 43px;
         word-spacing: 0.4rem;
 
+       
+
         @include small{
-          font-size: 39px;
+          font-size: 35px;
         }
 
         span {
@@ -43,7 +45,7 @@
         font-size: 30px;
 
         @include small{
-          font-size: 28px;
+          font-size: 25px;
         }
 
         span{
@@ -57,6 +59,10 @@
         font-size: 17px;
         width: 84%;
         line-height: 1.5rem;
+
+        @include small{
+          font-size: 16px;
+        }
       }
 
       button {
@@ -69,6 +75,10 @@
         border: none;
         margin-top: 2rem;
         font-size: 18px;
+
+        @include small{
+          padding: 1rem 2rem;
+        }
       }
     }
     .hero-2 {

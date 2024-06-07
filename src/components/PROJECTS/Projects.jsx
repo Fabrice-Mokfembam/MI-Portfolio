@@ -19,7 +19,7 @@ const projects = [
     description: 'A blogging platform built using the MERN stack with SASS for styling.',
     techStack: 'MERN stack, SASS',
     githubLink: 'https://github.com/Fabrice-Mokfembam/Blog',
-    liveLink: 'https://your-blogger-website.com',
+    liveLink: 'https://blog-iota-one.vercel.app/',
   },
   {
     img: word,
@@ -27,7 +27,7 @@ const projects = [
     description: 'A mini word processing app with real-time collaboration built using the MERN stack and Socket.IO.',
     techStack: 'MERN stack, SASS, Socket.IO',
     githubLink: 'https://github.com/Fabrice-Mokfembam/Realtime-Wordprocessing-app',
-    liveLink: 'https://your-mini-word-processing-app.com',
+    liveLink: 'https://realtime-wordprocessing-app.vercel.app/',
   },
   {
     img: VC,
@@ -35,7 +35,7 @@ const projects = [
     description: 'A website for renting chairs and tables, developed for a client project using React.js and SASS.',
     techStack: 'React.js, SASS',
     githubLink: 'https://github.com/Fabrice-Mokfembam/VC-Rentals',
-    liveLink: 'https://your-vc-rentals-website.com',
+    liveLink: 'https://vc-rentals.vercel.app/',
   },
   {
     img: AI,
@@ -43,7 +43,7 @@ const projects = [
     description: 'A bot developed using React.js, SASS, and the Gemini API.',
     techStack: 'React.js, SASS, Gemini API',
     githubLink: 'https://github.com/Fabrice-Mokfembam/AI-Chat-Assistant',
-    liveLink: 'https://your-thiago-ai-website.com',
+    liveLink: 'https://ai-chat-assistant-delta.vercel.app/',
   },
   {
     img: API,

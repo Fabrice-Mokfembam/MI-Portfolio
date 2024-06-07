@@ -115,6 +115,7 @@ nav{
         gap: 1rem;
         padding: 2rem 1rem;
         transition: all 1s ease-in-out;
+        z-index: 99;
         
         @include mediumA{
             display: none;

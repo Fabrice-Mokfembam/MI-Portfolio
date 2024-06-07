@@ -69,6 +69,10 @@
                 p{
                     font-size: 18px;
                     line-height: 1.7rem;
+
+                     @include small(){
+    font-size: 16px;
+  }
                 }
                 
             }
