@@ -39,7 +39,7 @@ const skills = [
     experience: '1.5+ Years of Experience',
   },
   {
-    icon: <FaPhp className="icon" />, // Assuming FaPhp is the correct import
+    icon: <FaPhp className="icon" />, 
     name: 'PHP',
     experience: '.5 Years of Experience',
   },
@@ -51,6 +51,11 @@ const skills = [
   {
     icon: <FaCode className="icon" />,
     name: 'Ionic',
+    experience: '.5+ Years of Experience',
+  },
+  {
+    icon: <FaCode className="icon" />,
+    name: 'React-Native',
     experience: '.5+ Years of Experience',
   },
 ];
