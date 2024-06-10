@@ -6,7 +6,7 @@ const skills = [
   {
     icon: <FaHtml5 className="icon" />,
     name: 'HTML5',
-    experience: '2+ Years of Experience',
+    experience: '3+ Years of Experience',
   },
   {
     icon: <FaCss3Alt className="icon" />,
@@ -16,7 +16,7 @@ const skills = [
   {
     icon: <FaJs className="icon" />,
     name: 'JavaScript',
-    experience: '4+ Years of Experience',
+    experience: '3+ Years of Experience',
   },
   {
     icon: <FaReact className="icon" />,
@@ -26,27 +26,32 @@ const skills = [
   {
     icon: <FaNodeJs className="icon" />,
     name: 'Node.js',
-    experience: '3+ Years of Experience',
+    experience: '1.5+ Years of Experience',
   },
   {
     icon: <FaDatabase className="icon" />,
     name: 'MongoDB',
-    experience: '2+ Years of Experience',
+    experience: '1.5+ Years of Experience',
   },
   {
     icon: <FaServer className="icon" />,
     name: 'Express.js',
-    experience: '3+ Years of Experience',
+    experience: '1.5+ Years of Experience',
   },
   {
     icon: <FaPhp className="icon" />, // Assuming FaPhp is the correct import
     name: 'PHP',
-    experience: '2+ Years of Experience',
+    experience: '.5 Years of Experience',
   },
   {
     icon: <FaCode className="icon" />,
     name: 'Next.js',
-    experience: '1+ Years of Experience',
+    experience: '.5+ Years of Experience',
+  },
+  {
+    icon: <FaCode className="icon" />,
+    name: 'Ionic',
+    experience: '.5+ Years of Experience',
   },
 ];
 
